@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/profil.css">
+</head>
+<body>
+    <header>
+        <h1>ENI - MEMORY - Profil</h1>
+    </header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="inscription.html">S'inscrire</a>
+        <a href="connection.html">Se connecter</a>
+        <a href="profil.html">Profil</a>
+        <a href="jouer.html">Jouer</a>
+    </nav>
+    <main>
+        <h2>Profil</h2>
+        <img class="profilImg" src="/img/question.svg">
+        <div class="connect">
+            <label for="email">Entrez votre email</label>
+            <div class="email">
+                <input type="email" name="email" id="email" required placeholder="Votre email">
+            </div>
+            <hr>
+            <label for="mdp">Mot de passe</label>
+            <div class="mdp">
+                <input type="text" name="mdp" id="mdp" required placeholder="Votre mot de passe">
+            </div>
+            <hr>
+        </div>
+        <div class="placeMemo">
+            <div>
+                <label for="choix-memory">Choix du memory</label>
+                <select name="memory" id="choix-memory">
+                    <option value="alphabet">Alphabet-Scrable</option>
+                    <option value="animaux">Animaux</option>
+                    <option value="animauxAnimes">Animaux Animés</option>
+                    <option value="chiens" selected>Chiens</option>
+                    <option value="dinosaures">Dinosaures</option>
+                    <option value="dinosauresAvecNom">Dinosaures avec nom</option>
+                    <option value="legumes">Légumes</option>
+                </select>
+                <div>
+                    <img class="memoryDetail" src="/img/chiens/memory_details_chiens.png">
+                </div>
+            </div>
+            <div>
+                <label for="taille">Choix du Memory</label>
+            <select name="taille" id="taille">
+                <option value="2par2">2*2</option>
+                <option value="3par2">3*2</option>
+                <option value="3par3">3*3</option>
+                <option value="3par4">3*4</option>
+                <option value="4par4">4*4</option>
+            </select>
+            </div>    
+        </div>
+        
+        <div class="divbtn">
+            <button type="submit" class="button">Se connecter</button>
+        </div>
+    </main>
+</body>
+</html>

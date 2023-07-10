@@ -1,0 +1,37 @@
+div{
+    margin: 0;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.profilImg{
+    width: 10%;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0.3em;
+}
+
+.connect{
+    margin: 0;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    text-align: left;
+}
+
+.email, .mdp, select, div{
+    margin: 0;
+}
+select{
+    background-color: rgba(5, 78, 78, 0.5);
+    border: 0.1em solid rgba(235, 89, 5, 0.8);
+}
+option{
+    background-color: rgba(216, 18, 84, 0.5);
+}
+
+input::placeholder {
+    font-size: 0.8em;
+}
+input:focus{
+    outline: none;
+}

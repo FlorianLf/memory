@@ -1,0 +1,146 @@
+*{
+    margin : 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5em;
+    color: white;
+}
+
+body{
+    background-image: url("../img/espace.jpg");
+}
+header {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5em;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+nav {
+    display: inline-block;
+    background-color: rgba(173, 102, 240, 0.3);
+    text-align: center;
+    border-radius: 20px;    
+}
+
+a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #ec4a09;
+    margin: 0 1vw;
+    padding: 0 1vw;
+    text-align: center;
+}
+
+main {
+    max-width: 700px;
+    margin-top: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    width: 75%;
+    text-align: center;
+    background-color: rgba(5, 78, 78, 0.5);
+    border-radius: 15px;
+}
+p ,li, h2{
+    text-align: left;
+}
+div {
+    margin : 1vh 3vw;
+}
+
+h2 {
+    margin: 2vh 3vw;    
+    font-size: 2em;
+}
+
+ul{
+    padding: 0;
+    margin-left: 10px;
+}
+.memoryDetail{
+    width: 250px;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    border-radius: 0.5em;
+}
+strong {
+    font-weight: 700;
+}
+hr{
+    margin-bottom: 2.5vh;
+}
+main, nav {
+    border : 1px solid black;
+}
+a:hover {
+    color: white;
+}
+input {
+    color: black;
+}
+form, h2 {
+    text-align: center;
+}
+form, h3{
+    text-align: left;
+    font-size: 0.8em;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2vh;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+form, label {
+    text-align: left;
+}
+input {
+    width: 100%;
+    border: none;
+    background-color: rgba(5, 78, 78, 0.0);
+    color: white;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+    margin-left: 0;
+}
+input::placeholder {
+    font-size: 0.8em;
+}
+input:focus{
+    outline: none;
+}
+.divbtn{
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    margin-top: 1vh;
+}
+.divbtn button {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 2vh;
+    color: black;
+    border: 1px solid rgba(173, 102, 240, 0.3);
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+
+
+.divbtn button:first-child:hover{
+    color: rgba(0, 250, 0, 0.8);
+    background-color: rgba(150, 78, 150, 0.5);
+}
+
+.divbtn button:last-child:hover{
+    color: rgba(248, 5, 5, 0.8);
+    background-color: rgba(150, 78, 150, 0.5);
+}

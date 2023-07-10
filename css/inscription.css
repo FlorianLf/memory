@@ -1,0 +1,57 @@
+div{
+    margin: 0;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+
+.imgCheck {
+    width: 1em;
+}
+
+.nom, .email, .mdp, .confmdp {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+}
+.pNom, .pEmail, .pMdp {
+    font-size: 0.7em;
+    font-weight: bold;
+    color: red;
+    visibility: hidden;
+}
+input {
+    margin-bottom: 0;
+}
+.puissanceMdp{
+    display: flex;
+    margin: 0;
+}
+.dfaible, .dmoyenne, .dfort {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    visibility: hidden;
+}
+.orange, .jaune, .vert {
+    margin: 0;
+    width: 100%;
+    height: 0.1em;
+    border: 0.1vh solid rgba(5, 78, 78, 0.8);
+    border-radius: 0.1vh;
+}
+.orange {
+    background-color: orange;
+}
+.jaune {
+    background-color: yellow;
+}
+.vert {
+    background-color: green;
+}
+.faible, .moyenne, .fort {
+    font-size: 0.7em;
+}
+.creer:disabled, .creer:disabled:hover {
+    background-color: brown;
+}

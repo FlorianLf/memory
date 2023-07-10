@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S'inscrire</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/inscription.css">
+</head>
+<body>
+    <header>
+        <h1>ENI - MEMORY - S'inscrire</h1>
+    </header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="inscription.html">S'inscrire</a>
+        <a href="connection.html">Se connecter</a>
+        <a href="profil.html">Profil</a>
+        <a href="jouer.html">Jouer</a>
+    </nav>
+    <main>
+        <div class="form">
+        <form action="" id="myform" method="post"></form>
+            <h2>Inscrivez-vous.</h2>
+            <label for="nom">Nom d'utilisateur</label>
+            <div class="nom">
+                <input type="text" id="nom" name="nom" required pattern="[A-Za-z]{3,}" placeholder="3 caractères minimum">
+                <img class="imgCheck" id="imgCheckNom" src="/img/check.svg" hidden>
+            </div>
+            <p class="pNom" id="pNom">Choisissez un pseudo contenant au moins 3 caractères.</p>
+            <hr>
+            <label for="email">Entrez votre email</label>
+            <div class="email">
+                <input type="email" name="email" id="email" required placeholder="Votre email">
+                <img class="imgCheck" id="imgCheckEmail" src="/img/check.svg" hidden>
+            </div>
+            <p class="pEmail" id="pEmail">Rentrez un email valide.</p>
+            <hr>
+            <label for="mdp">Mot de passe</label>
+            <div class="mdp">
+                <input type="text" name="mdp" id="mdp" required placeholder="Votre mot de passe (Au moins un symbole, un chiffre, ainsi que 6 caractères minimum.)">
+                <img class="imgCheck" id="imgCheckMdp" src="/img/check.svg" hidden>
+            </div>
+            <p class="pMdp" id="pMdp">Au moins un symbole, un chiffre, ainsi que 6 caractères minimum.</p>
+            <div class="puissanceMdp">
+                <div class="dfaible" id="dfaible">
+                    <div class="orange"></div>
+                    <div class="faible">faible</div>                   
+                </div>
+                <div class="dmoyenne" id="dmoyenne">
+                    <div class="jaune"></div>
+                    <div class="moyenne">moyenne</div>                    
+                </div>
+                <div class="dfort" id="dfort">
+                    <div class="vert"></div>
+                    <div class="fort">fort</div>
+                </div>
+            </div>
+            <hr>
+            <label for="confmdp">Confirmez le mot de passe</label>
+            <div class="confmdp">
+                <input type="text" name="confmdp" id="confmdp" placeholder="Confirmez le mot de passe">
+                <img class="imgCheck" id="imgCheckconfMdp" src="/img/check.svg" hidden>
+            </div>
+            <hr>
+            <div class="divbtn">
+                <button type="submit" id="valider" class="creer">Création du compte</button>
+                <button type="button" id="reset">Annuler</button>
+            </div>
+        </form>
+    </div>
+    </main>
+    <script src="/javaScript/inscription.js"></script>
+</body>
+</html>

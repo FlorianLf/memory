@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se connecter</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/connection.css">
+</head>
+<body>
+    <header>
+        <h1>ENI - MEMORY - Se connecter</h1>
+    </header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="inscription.html">S'inscrire</a>
+        <a href="connection.html">Se connecter</a>
+        <a href="profil.html">Profil</a>
+        <a href="jouer.html">Jouer</a>
+    </nav>
+    <main>
+        <h2>Connectez-vous.</h2>
+        <div class="connect">
+            <label for="email">Entrez votre email</label>
+            <div class="email">
+                <input type="email" name="email" id="email" required placeholder="Votre email">
+            </div>
+            <hr>
+            <label for="mdp">Mot de passe</label>
+            <div class="mdp">
+                <input type="text" name="mdp" id="mdp" required placeholder="Votre mot de passe">
+            </div>
+            <hr>
+        </div>
+        <div class="divbtn">
+            <button type="submit">Se connecter</button>
+            <button type="reset" id="resetConnect">Annuler</button>
+        </div>
+    </main>
+    <script src="/javaScript/connection.js"></script>
+</body>
+</html>

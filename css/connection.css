@@ -1,0 +1,10 @@
+.connect {
+    margin: 0;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    text-align: left;
+}
+
+.email, .mdp {
+    margin: 0;
+}
