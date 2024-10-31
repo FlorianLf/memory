@@ -9,63 +9,38 @@
     <link rel="stylesheet" href="/css/jouer.css">
 </head>
 <body>
-    <header>
-        <h1>ENI - MEMORY - Jouer</h1>
-    </header>
-    <nav>
-        <a href="index.html">Accueil</a>
-        <a href="inscription.html">S'inscrire</a>
-        <a href="connection.html">Se connecter</a>
-        <a href="profil.html">Profil</a>
-        <a href="jouer.html">Jouer</a>
-    </nav>
-    <main>
-        <div>
-            <p>Tentez de gagner avec le moins d'essais possible.</p>
-            <p>Appuyer sur <strong>barre d'espace</strong> pour relancer le jeu.</p>
-            <p id="nbCoup">Nombre de coups 0</p>
-        </div>
-       
-        <div class="grid-container">
-                <div>
-                    <img id="case0" src="/img/question.svg" alt="Trouver la bonne image" class="imgGrille">
-                </div>
-                <div>
-                    <img id="case1" src="/img/question.svg" alt="Trouver la bonne image" class="imgGrille">
-                </div>
-                <div>
-                    <img id="case2" src="/img/question.svg" alt="Trouver la bonne image" class="imgGrille">
-                </div>
-                <div>
-                    <img id="case3" src="/img/question.svg" alt="Trouver la bonne image" class="imgGrille">
-                </div>
-                <div>
-                    <img id="case4"  src="/img/question.svg" alt="Trouver la bonne image" class="imgGrille">
-                </div>
-                <div>
-                    <img id="case5" src="/img/question.svg" alt="Trouver la bonne image" class="imgGrille">
-                </div>
-                <div>
-                    <img id="case6" src="/img/question.svg" alt="Trouver la bonne image" class="imgGrille">
-                </div>
-                <div>
-                    <img id="case7" src="/img/question.svg" alt="Trouver la bonne image" class="imgGrille">
-                </div>
-                <div>
-                    <img id="case8" src="/img/question.svg" alt="Trouver la bonne image" class="imgGrille">
-                </div>
-                <div>
-                    <img id="case9" src="/img/question.svg" alt="Trouver la bonne image" class="imgGrille">
-                </div>
-                <div>
-                    <img id="case10" src="/img/question.svg" alt="Trouver la bonne image" class="imgGrille">
-                </div>
-                <div>
-                    <img id="case11" src="/img/question.svg" alt="Trouver la bonne image" class="imgGrille">
-                </div>
-        </div>
-    </main>
-    <script src="javaScript/plateau.js"></script>
+<header>
+    <h1>ENI - MEMORY - Jouer</h1>
+</header>
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="inscription.html">S'inscrire</a>
+    <a href="connection.html">Se connecter</a>
+    <a href="profil.html">Profil</a>
+    <a href="jouer.html">Jouer</a>
+</nav>
+<main>
+    <div>
+        <p>Tentez de gagner avec le moins d'essais possible.</p>
+        <p>Appuyez sur <strong>barre d'espace</strong> pour relancer le jeu.</p>
+        <p id="nbCoup">Nombre de coups : 0</p>
+    </div>
 
+    <div class="grid-container">
+        <div><img id="case0" src="/img/question.svg" alt="Trouver la bonne image" class="imgGrille"></div>
+        <div><img id="case1" src="/img/question.svg" alt="Trouver la bonne image" class="imgGrille"></div>
+        <div><img id="case2" src="/img/question.svg" alt="Trouver la bonne image" class="imgGrille"></div>
+        <div><img id="case3" src="/img/question.svg" alt="Trouver la bonne image" class="imgGrille"></div>
+        <div><img id="case4" src="/img/question.svg" alt="Trouver la bonne image" class="imgGrille"></div>
+        <div><img id="case5" src="/img/question.svg" alt="Trouver la bonne image" class="imgGrille"></div>
+        <div><img id="case6" src="/img/question.svg" alt="Trouver la bonne image" class="imgGrille"></div>
+        <div><img id="case7" src="/img/question.svg" alt="Trouver la bonne image" class="imgGrille"></div>
+        <div><img id="case8" src="/img/question.svg" alt="Trouver la bonne image" class="imgGrille"></div>
+        <div><img id="case9" src="/img/question.svg" alt="Trouver la bonne image" class="imgGrille"></div>
+        <div><img id="case10" src="/img/question.svg" alt="Trouver la bonne image" class="imgGrille"></div>
+        <div><img id="case11" src="/img/question.svg" alt="Trouver la bonne image" class="imgGrille"></div>
+    </div>
+</main>
+<script src="javaScript/plateau.js"></script>
 </body>
 </html>

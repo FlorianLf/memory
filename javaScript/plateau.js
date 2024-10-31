@@ -1,5 +1,5 @@
 
-window.onload = ini();
+window.onload = init;
 
 let placeMini1 = null;
 let placeMini2 = null; 
@@ -8,11 +8,9 @@ let pass = 0;
 let nbCoup = 0;
 let carte1 = null;
 let carte2 = null;
-let image1;
-let image2;
 let place = ['1','2','3','4','5','5','4','3','2','1','6','6']; // tableau image
 shuffle(place); // melange des cartes dans le tableau
-function  ini() {
+function  init() {
         let mesImg = document.querySelectorAll('img');
         
         mesImg.forEach(monImg => {
@@ -22,9 +20,9 @@ function  ini() {
 
 
 function visibilite(event) { 
-    let clickImg = event.srcElement.src;
-    if(clickImg == 'http://127.0.0.1:5500/img/question.svg'){ // regarde si click sur img ?
-        if(pass == 0){                                        // au premier passage
+    let clickImg = event.currentTarget.src;
+    if(clickImg.endsWith('question.svg')){ // regarde si click sur img ?
+        if(pass === 0){                                        // au premier passage
             carte1 = event.currentTarget;   
             carte1.classList.toggle('imgSelect');             // ajoute la class imgSelect (pour rotation)
             event = event.currentTarget.id;
@@ -32,7 +30,7 @@ function visibilite(event) {
             document.getElementById(event).src = 'img/memory-legume/'+ place[n] + '.svg'; //changement de l'image
             placeMini1 = n;                                   // garde en mémoire la carte 1 retourne
             pass+=1;
-        } else if(pass == 1) {                                // au second passage
+        } else if(pass === 1) {                                // au second passage
             carte2 = event.currentTarget;
             carte2.classList.toggle('imgSelect');
             event = event.currentTarget.id;
