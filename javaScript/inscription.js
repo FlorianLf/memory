@@ -146,11 +146,11 @@ function verificationconfMdps(){        // verification egalite mdp et conf mdp
 }
 
 function passerCheck(element){  // insertion du check
-    element.src = '/img/check.svg'
+    element.src = 'img/check.svg'
     element.hidden = false;
 }
 function passerError(element){  // insertion du error
-    element.src = '/img/error.svg';
+    element.src = 'img/error.svg';
     element.hidden = false;
 }
 function passerRien(element){   // rendre invisible 
