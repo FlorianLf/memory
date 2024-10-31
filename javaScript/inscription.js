@@ -126,7 +126,7 @@ function verificationForceMdp(){        // verification force mdp
 }
 
 
-function verificationconfMdps(){        // verification egalite mdp et conf mdp
+function verificationconfMdps(){       // verification egalite mdp et conf mdp
     let confMdp = document.getElementById('confmdp').value;
     if(mdp === confMdp){    
         document.getElementById('imgCheckconfMdp').src = '/img/check.svg'
