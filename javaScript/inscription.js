@@ -5,7 +5,7 @@ let nomOk = false;
 let emailOk = false;
 let mdpOk = false;
 let confMdpOk = false;
-window.onload = init();
+window.onload = init;
 
 const emailRegex = new RegExp(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/);    // regex email
 const mdpRegex = new RegExp(/^(?=.*[^A-Za-z0-9])(?=.*?[0-9])(?=.*?[#?!@$%^&*-/+"'{}()|`_^¨£¤µ]).{6,}$/); // regex mdp
