@@ -22,7 +22,7 @@ function  init() {
 function visibilite(event) { 
     let clickImg = event.currentTarget.src;
     if(clickImg.endsWith('question.svg')){ // regarde si click sur img ?
-        if(pass === 0){                                        // au premier passage
+        if(pass === 0){                                       // au premier passage
             carte1 = event.currentTarget;   
             carte1.classList.toggle('imgSelect');             // ajoute la class imgSelect (pour rotation)
             event = event.currentTarget.id;
